@@ -1,7 +1,4 @@
 // Shell Bryson Raw Site
-
-@import url('https://fonts.googleapis.com/css?family=Dosis:800');
-
 $color-fade: rgba(0,0,0, 0.4);
 $color-body: rgba(0,0,0, 0.9);
 
@@ -26,6 +23,10 @@ $color-body: rgba(0,0,0, 0.9);
 
     &:visited, &:active {
       color: $color-body;
+    }
+
+    i {
+      padding-right: 4px;
     }
   }
 

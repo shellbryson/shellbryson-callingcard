@@ -1,1 +1,47 @@
 // Shell Bryson Raw Site
+
+@import url('https://fonts.googleapis.com/css?family=Dosis:800');
+
+$color-fade: rgba(0,0,0, 0.4);
+$color-body: rgba(0,0,0, 0.9);
+
+.header {
+  font-family: 'Dosis', sans-serif;
+}
+
+.links {
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    padding-right: 20px;
+
+    &:hover {
+      .links__description {
+        color: $color-body;
+      }
+    }
+
+    &:visited, &:active {
+      color: $color-body;
+    }
+  }
+
+  &__description {
+    color: $color-fade;
+    transition: 0.3s;
+
+    &:before {
+      display: inline-block;
+      content: ">";
+      padding-right: 10px;
+    }
+  }
+}
+
+.footer {
+  margin-top: 50px;
+  font-family: 'Dosis', sans-serif;
+}

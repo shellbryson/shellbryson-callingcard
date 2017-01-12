@@ -1,3 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:800");
+.header {
+  font-family: 'Dosis', sans-serif; }
 
+.links__link {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+  padding-right: 20px; }
+  .links__link:hover .links__description {
+    color: rgba(0, 0, 0, 0.9); }
+  .links__link:visited, .links__link:active {
+    color: rgba(0, 0, 0, 0.9); }
+.links__description {
+  color: rgba(0, 0, 0, 0.4);
+  transition: 0.3s; }
+  .links__description:before {
+    display: inline-block;
+    content: ">";
+    padding-right: 10px; }
+
+.footer {
+  margin-top: 50px;
+  font-family: 'Dosis', sans-serif; }
 
 /*# sourceMappingURL=shellbryson.css.map */

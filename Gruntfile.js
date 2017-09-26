@@ -1,4 +1,6 @@
 const path = require('path');
+const browserSyncPattern = ['./*.html', './styles/*.css'];
+
 module.exports = function (grunt) {
   const stylesPattern = [
     'styles/**/*.scss'
@@ -24,8 +26,22 @@ module.exports = function (grunt) {
           './styles/shellbryson.css': stylesPatternMain
         }
       }
+    },
+    browserSync: {
+      bsFiles: {
+        src: browserSyncPattern
+      },
+      options: {
+        browser: "google chrome",
+        watchTask: true,
+        ghostMode: false,
+        server: {
+          baseDir: ['./']
+        }
+      }
     }
   });
+
 
   grunt.registerTask('version', [], () => {
     const obj = grunt.file.readJSON('package.json');
@@ -41,17 +57,12 @@ module.exports = function (grunt) {
 
   grunt.registerTask('styles', [], () => {
     grunt.loadNpmTasks('grunt-sass');
-    grunt.task.run('sass');
+    grunt.loadNpmTasks('grunt-browser-sync');
+    grunt.task.run('sass','browserSync');
   });
 
   grunt.registerTask('default', [], () => {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.task.run('version', 'styles', 'watch');
-  });
-
-  grunt.event.on('watch', ( action, filepath ) => {
-    let ext = path.extname(filepath);
-    changed_files[filepath] = action;
-    onChange(ext);
   });
 };

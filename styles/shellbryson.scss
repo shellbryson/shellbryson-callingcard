@@ -14,9 +14,21 @@ $color-body: rgba(0,0,0, 0.9);
 
 .sb-main {
 
+  @include small {
+    display: table;
+  }
+}
+
+body {
+  border: 2px solid blue;
 }
 
 .sb-persona {
+
+  @include small {
+    display: table-cell;
+    width: 50%;
+  }
 
   &--developer {
 

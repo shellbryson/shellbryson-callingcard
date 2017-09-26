@@ -1,3 +1,15 @@
+@media (min-width: 48em) {
+  .sb-main {
+    display: table; } }
+
+body {
+  border: 2px solid blue; }
+
+@media (min-width: 48em) {
+  .sb-persona {
+    display: table-cell;
+    width: 50%; } }
+
 .header {
   font-family: 'Dosis', sans-serif; }
 

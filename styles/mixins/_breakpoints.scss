@@ -2,14 +2,13 @@
 // * Standard breakpoints
 // *****************************************************************************
 
-$xxsmall: 20em; //  320px
-$xsmall:  32em; //  500px
-$small:   48em; //  768px
-$medium:  64em; // 1024px
-$large:  100em; // 1600px
+$tiny:   32em;
+$small:  48em;
+$medium: 64em;
+$large:  80em;
 
-@mixin xsmall() {
-  @media (min-width: $xsmall)  { @content ; }
+@mixin tiny() {
+  @media (min-width: $tiny)  { @content ; }
 }
 
 @mixin small() {

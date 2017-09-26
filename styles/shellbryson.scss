@@ -1,16 +1,74 @@
 @import "mixins/breakpoints";
+@import "vendor/vendor";
 
 $color-fade: rgba(0,0,0, 0.4);
 $color-body: rgba(0,0,0, 0.9);
+$color-text: rgba(255,255,255, 0.6);
+
+$font: 'Dosis', sans-serif;
+$animation-speed: 300ms;
+
+body {
+  font-size: 16px;
+  font-family: $font;
+  line-height: 1.2;
+  color: $color-text;
+  background-color: lighten($color-body, 40%);
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
 
 .sb-header {
-  background-color: lighten($color-body, 20%);
+  padding: 1rem 1rem 2rem 1rem;
+  color: $color-text;
+  background: lighten($color-body, 10%) url('/images/brand.svg');
+  background-position: right 1rem top 0;
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+  transition: $animation-speed;
+
+  @include tiny {
+    background-size: 100px 100px;
+    background-position: right 2rem top 0;
+    padding: 2rem 2rem 4rem 2rem;
+  }
+
+  @include small {
+    background-size: 250px 250px;
+    background-position: right 2rem top 0;
+  }
+
+  @include large {
+    background-size: 350px 350px;
+  }
 
   &__title {
-    font-family: 'Dosis', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    max-width: 400px;
+    transition: $animation-speed;
+
+    @include small {
+      font-size: 4rem;
+    }
   }
+
   &__subtitle {
-    font-family: 'Dosis', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2;
+    max-width: 400px;
+    transition: $animation-speed;
+
+    @include small {
+      font-size: 2rem;
+    }
+  }
+
+  &__copy {
+    max-width: 400px;
   }
 }
 
@@ -18,70 +76,66 @@ $color-body: rgba(0,0,0, 0.9);
 
   @include small {
     display: table;
+    width: 100%;
   }
 }
 
-body {
-
-}
-
 .sb-persona {
+  padding: 1rem 1rem 2rem 1rem;
+
+  @include tiny {
+    padding: 2rem 2rem 4rem 2rem;
+  }
 
   @include small {
     display: table-cell;
     width: 50%;
   }
 
+  &__title {
+    font-family: $font;
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+
   &--developer {
-    background-color: lighten($color-body, 30%);
+    background-color: lighten($color-body, 20%);
   }
 
   &--writer {
-    background-color: lighten($color-body, 50%);
+    background-color: lighten($color-body, 30%);
   }
 }
 
-.header {
-  font-family: 'Dosis', sans-serif;
+.sb-links {
+  margin-top: 2rem;
 }
 
-.links {
+.sb-link {
 
-  &__link {
-    display: inline-block;
-    text-decoration: none;
-    font-family: 'Dosis', sans-serif;
-    font-size: 20px;
-    padding-right: 20px;
-
-    &:hover {
-      .links__description {
-        color: $color-body;
-      }
-    }
-
-    &:visited, &:active {
-      color: $color-body;
-    }
-
-    i {
-      padding-right: 4px;
-    }
-  }
+  display: inline-block;
+  margin-right: 4px;
+  margin-bottom: 6px;
+  background: $color-text;
+  color: $color-body;
+  padding: 0.5rem;
+  text-decoration: none;
 
   &__description {
-    color: $color-fade;
-    transition: 0.3s;
-
-    &:before {
-      display: inline-block;
-      content: ">";
-      padding-right: 10px;
-    }
+    padding-left: 4px;
   }
 }
 
-.footer {
-  margin-top: 50px;
-  font-family: 'Dosis', sans-serif;
+.sb-footer {
+  margin: 1rem;
+  font-size: 0.8rem;
+
+  @include small {
+    margin: 2rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-text;
+  }
 }

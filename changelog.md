@@ -4,8 +4,12 @@
 
 ### Adds
 
+- Adds 3-tile design
+- New copy and introduction
+- Logo and breakpoints
 - Auto-reloading via BrowserSync
 - Compile via Grunt.
 - Package information.
 - Breakpoint mixin.
+- Vendor resets
 - Version file and readme

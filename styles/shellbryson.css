@@ -1,14 +1,24 @@
+.sb-header {
+  background-color: rgba(51, 51, 51, 0.9); }
+  .sb-header__title {
+    font-family: 'Dosis', sans-serif; }
+  .sb-header__subtitle {
+    font-family: 'Dosis', sans-serif; }
+
 @media (min-width: 48em) {
   .sb-main {
     display: table; } }
-
-body {
-  border: 2px solid blue; }
 
 @media (min-width: 48em) {
   .sb-persona {
     display: table-cell;
     width: 50%; } }
+
+.sb-persona--developer {
+  background-color: rgba(77, 76, 76, 0.9); }
+
+.sb-persona--writer {
+  background-color: rgba(128, 127, 127, 0.9); }
 
 .header {
   font-family: 'Dosis', sans-serif; }

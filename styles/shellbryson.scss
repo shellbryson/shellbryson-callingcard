@@ -4,11 +4,13 @@ $color-fade: rgba(0,0,0, 0.4);
 $color-body: rgba(0,0,0, 0.9);
 
 .sb-header {
-  &__title {
+  background-color: lighten($color-body, 20%);
 
+  &__title {
+    font-family: 'Dosis', sans-serif;
   }
   &__subtitle {
-
+    font-family: 'Dosis', sans-serif;
   }
 }
 
@@ -20,7 +22,7 @@ $color-body: rgba(0,0,0, 0.9);
 }
 
 body {
-  border: 2px solid blue;
+
 }
 
 .sb-persona {
@@ -31,11 +33,11 @@ body {
   }
 
   &--developer {
-
+    background-color: lighten($color-body, 30%);
   }
 
   &--writer {
-
+    background-color: lighten($color-body, 50%);
   }
 }
 

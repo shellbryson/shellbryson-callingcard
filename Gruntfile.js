@@ -29,19 +29,19 @@ module.exports = function (grunt) {
     },
     browserSync: {
       bsFiles: {
-        src: browserSyncPattern
+        src : [
+          './styles/shellbryson.css',
+          './index.html'
+        ]
       },
       options: {
-        browser: "google chrome",
         watchTask: true,
-        ghostMode: false,
         server: {
-          baseDir: ['./']
+          baseDir: "./"
         }
       }
     }
   });
-
 
   grunt.registerTask('version', [], () => {
     const obj = grunt.file.readJSON('package.json');
@@ -57,12 +57,12 @@ module.exports = function (grunt) {
 
   grunt.registerTask('styles', [], () => {
     grunt.loadNpmTasks('grunt-sass');
-    grunt.loadNpmTasks('grunt-browser-sync');
-    grunt.task.run('sass','browserSync');
+    grunt.task.run('sass',);
   });
 
   grunt.registerTask('default', [], () => {
+    grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.task.run('version', 'styles', 'watch');
+    grunt.task.run('browserSync', 'version', 'styles', 'watch');
   });
 };

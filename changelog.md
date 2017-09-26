@@ -4,7 +4,7 @@
 
 ### Adds
 
-- Autoreloading via BrowserSync
+- Auto-reloading via BrowserSync
 - Compile via Grunt.
 - Package information.
 - Breakpoint mixin.

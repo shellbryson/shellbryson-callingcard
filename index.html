@@ -10,22 +10,43 @@
     <link rel="stylesheet" href="styles/shellbryson.css">
   </head>
   <body>
-    <main>
-      <header class="header">
-        <h1>Shell Bryson</h1>
-        <h2>Web Developer and Writer</h2>
-      </header>
-      <section class="links">
-        <a href="https://sheru.uk" class="links__link">Code <span class="links__description">A front end web developer's diary</span></a>
-        <a href="http://codepen.io/shellbryson/" class="links__link">Demos <span class="links__description">Code examples, experiments, demos</span></a>
-        <a href="https://github.com/shellbryson" class="links__link"><i class="fa fa-github"></i>Git <span class="links__description">Project repository</span></a>
-        <a href="https://www.linkedin.com/in/shellbryson" class="links__link"><i class="fa fa-linkedin-square"></i>LinkedIn <span class="links__description">LinkedIn</span></a>
-        <a href="https://twitter.com/shellbryson" class="links__link"><i class="fa fa-twitter-square"></i> @shellbryson <span class="links__description">Twitter</span></a>
+
+    <header class="sb-header">
+      <h1 class="sb-header__title">Shell Bryson</h1>
+      <h2 class="sb-header__subtitle">Web Developer and Writer</h2>
+    </header>
+
+    <main class="sb-main">
+
+      <section class="sb-persona sb-persona--developer">
+        <header class="sb-persona__heading">
+          <h2 class="sb-persona__title">Web Developer</h2>
+        </header>
+        <div class="sb-persona__content">
+          <div class="links">
+            <a href="https://sheru.uk" class="links__link">Code <span class="links__description">A front end web developer's diary</span></a>
+            <a href="http://codepen.io/shellbryson/" class="links__link">Demos <span class="links__description">Code examples, experiments, demos</span></a>
+            <a href="https://github.com/shellbryson" class="links__link"><i class="fa fa-github"></i>Git <span class="links__description">Project repository</span></a>
+            <a href="https://www.linkedin.com/in/shellbryson" class="links__link"><i class="fa fa-linkedin-square"></i>LinkedIn <span class="links__description">LinkedIn</span></a>
+            <a href="https://twitter.com/shellbryson" class="links__link"><i class="fa fa-twitter-square"></i> @shellbryson <span class="links__description">Twitter</span></a>
+          </div>
+        </div>
       </section>
+
+      <section class="sb-persona sb-persona--writer">
+        <header class="sb-persona__heading">
+          <h2 class="sb-persona__title">Writer</h2>
+        </header>
+        <div class="sb-persona__content">
+        </div>
+      </section>
+
     </main>
+
     <footer class="footer">
-      &copy <a href="https://sheru.uk">sheru.uk</a>
+      &copy; <a href="https://sheru.uk">sheru.uk</a>
     </footer>
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

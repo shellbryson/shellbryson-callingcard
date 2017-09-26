@@ -13,6 +13,7 @@
     color: rgba(0, 0, 0, 0.9); }
   .links__link i {
     padding-right: 4px; }
+
 .links__description {
   color: rgba(0, 0, 0, 0.4);
   transition: 0.3s; }
@@ -24,5 +25,3 @@
 .footer {
   margin-top: 50px;
   font-family: 'Dosis', sans-serif; }
-
-/*# sourceMappingURL=shellbryson.css.map */

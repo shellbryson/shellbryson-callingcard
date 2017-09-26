@@ -1,6 +1,31 @@
-// Shell Bryson Raw Site
+@import "mixins/breakpoints";
+
 $color-fade: rgba(0,0,0, 0.4);
 $color-body: rgba(0,0,0, 0.9);
+
+.sb-header {
+  &__title {
+
+  }
+  &__subtitle {
+
+  }
+}
+
+.sb-main {
+
+}
+
+.sb-persona {
+
+  &--developer {
+
+  }
+
+  &--writer {
+
+  }
+}
 
 .header {
   font-family: 'Dosis', sans-serif;

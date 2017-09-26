@@ -1,5 +1,15 @@
 # shellbryson.com changelog
 
+## 1.0.1-pre - 2017-09-27
+
+### Adds
+
+-
+
+### Fixes
+
+-
+
 ## 1.0.0 - 2017-09-26 (initial version)
 
 ### Adds

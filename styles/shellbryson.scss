@@ -129,6 +129,7 @@ p {
 .sb-footer {
   margin: 1rem;
   font-size: 0.8rem;
+  color: darken($color-text, 20%);
 
   @include small {
     margin: 2rem;
@@ -136,6 +137,14 @@ p {
 
   &__link {
     text-decoration: none;
-    color: $color-text;
+    color: darken($color-text, 5%);
+  }
+
+  &__crafted {
+    color: darken($color-text, 20%);
+    .fa {
+      padding-right: 4px;
+      padding-left: 4px;
+    }
   }
 }

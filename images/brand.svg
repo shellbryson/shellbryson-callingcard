@@ -1,0 +1,13 @@
+<svg width="1500px" height="1500px" viewBox="0 0 1500 1500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <desc>Created with Sketch.</desc>
+  <defs></defs>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="4vc-mono" fill="#757575">
+      <polygon id="chev4" points="500 1000 1000 1500 0 1500"></polygon>
+      <polygon id="chev3" points="999.5 1500 500 1000 1500 1000"></polygon>
+      <polygon id="chev2" points="1000 500 1500 1000 500 1000"></polygon>
+      <polygon id="chev1" points="500 1000 0 500 1000 500"></polygon>
+      <polygon id="line4" points="1000 500 1000 0 1500 0"></polygon>
+    </g>
+  </g>
+</svg>

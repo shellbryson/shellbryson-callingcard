@@ -1,6 +1,6 @@
 {
   "name": "shellbryson",
-  "version": "1.0.1-pre",
+  "version": "1.0.1",
   "description": "Shell Bryson business card site",
   "main": "Gruntfile.js",
   "scripts": {

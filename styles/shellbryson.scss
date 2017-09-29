@@ -1,5 +1,14 @@
+// *****************************************************************************
+// * Main CSS
+// *****************************************************************************
+
 @import "mixins/breakpoints";
+@import "mixins/visuallyhidden";
 @import "vendor/vendor";
+
+// *****************************************************************************
+// * Vars
+// *****************************************************************************
 
 $color-fade: rgba(0,0,0, 0.4);
 $color-body: rgba(0,0,0, 0.9);
@@ -7,6 +16,10 @@ $color-text: rgba(255,255,255, 0.6);
 
 $font: 'Dosis', sans-serif;
 $animation-speed: 300ms;
+
+// *****************************************************************************
+// * Global
+// *****************************************************************************
 
 body {
   font-size: 16px;
@@ -20,6 +33,10 @@ p {
   margin-bottom: 1rem;
   line-height: 1.4;
 }
+
+// *****************************************************************************
+// * Components
+// *****************************************************************************
 
 .sb-header {
   padding: 1rem 1rem 2rem 1rem;
@@ -109,6 +126,10 @@ p {
 
 .sb-links {
   margin-top: 2rem;
+
+  &__entry {
+    display: inline-block;
+  }
 }
 
 .sb-link {
@@ -124,12 +145,16 @@ p {
   &__description {
     padding-left: 4px;
   }
+
+  &__sr {
+    @include sr-only;
+  }
 }
 
 .sb-footer {
   margin: 1rem;
   font-size: 0.8rem;
-  color: darken($color-text, 20%);
+  color: darken($color-text, 10%);
 
   @include small {
     margin: 2rem;
@@ -141,7 +166,7 @@ p {
   }
 
   &__crafted {
-    color: darken($color-text, 20%);
+    color: darken($color-text, 10%);
     .fa {
       padding-right: 4px;
       padding-left: 4px;
